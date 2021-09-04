@@ -1,3 +1,43 @@
 .hidden{
   display: none;
 }
+#login-form{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#clock{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+#quote{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#todo-form{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+#images{
+ background-size: cover;
+}
+ol{
+  --li-bg: purple;
+  font-family: "Indie Flower";
+  font-size: 1.25em;
+  line-height: 0.75;
+  width: 1.5rem;
+  padding-top: 0.25rem;
+  text-align: center;
+  color: #fff;
+  background-color: purple;
+  border-radius: 0.25em;
+}
+ol li::before {
+  background-color: var(--li-bg);
+}
