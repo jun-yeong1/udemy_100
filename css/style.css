@@ -30,25 +30,42 @@ body {
 }
 #todo-form{
   position: absolute;
-  bottom: 16px;
-  right: 16px;
+  text-align: center;
+  
 }
 #images{
- background-size: cover;
- background-color: black;
+  background-size: cover;
+}
+#greeting{
+  position: absolute;
+}
+#todo{
+  position: absolute;
+
 }
 ol{
+  position: absolute;
   --li-bg: purple;
   font-family: "Indie Flower";
-  font-size: 1.25em;
-  line-height: 0.75;
-  width: 1.5rem;
-  padding-top: 0.25rem;
+  font-size: 18px;
+  padding: 40px 8px 12xp 40px;
   text-align: center;
   color: #fff;
   background-color: purple;
   border-radius: 0.25em;
 }
+ol li::marker{
+
+}
 ol li::before {
-  background-color: var(--li-bg);
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
 }
