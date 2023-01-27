@@ -1,7 +1,16 @@
-body {
+* {
   font-family: 'Unbounded', cursive;
 }
-
+body {
+  background-color: black;
+}
+form {
+  position: absolute;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 8px;
+  background-color: antiquewhite;
+}
 .hidden{
   display: none;
 }
