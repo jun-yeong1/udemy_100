@@ -1,11 +1,26 @@
-* {
-  font-family: 'Unbounded', cursive;
-}
 body {
   background-color: black;
+  font-family: 'Unbounded', cursive;
 }
 .hidden{
   display: none;
+}
+#main-header {
+  justify-content: space-between;
+  margin: 0.5rem;
+  padding: 0 0.1rem;
+  align-items: center;
+}
+#main-header ul {
+  list-style: none;
+  color: antiquewhite;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#main-header li {
+  margin: 0 2rem;
+  font-size: 2rem;
 }
 #login-form{
   position: absolute;
@@ -13,15 +28,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#clock{
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background-color: antiquewhite;
-  border-radius: 10px;
-  padding: 16px;
-}
 #quote{
+  display: flex;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -29,23 +37,31 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 16px;
+  text-align: center;
+  flex-direction: column;
+}
+#quote span {
+  margin: 0.1rem;
 }
 #todo-form{
   position: absolute;
   border-radius: 6px;
   background-color: antiquewhite;
   padding: 10px;
+  margin: 1rem auto;
   top: 40%;
   left: 50%;
+  width: 300px;
   transform: translate(-50%, -50%);
+}
+#todo-form input {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
 }
 #images{
   background-size: cover;
-}
-#greeting{
-  position: absolute;
-  background-color: white;
-  padding: 16px;
 }
 ol{
   position: relative;

@@ -18,14 +18,23 @@
     placeholder="What is your name"/>
     <button>Log In</button>
   </form>
-  <h1 id="greeting" class="hidden"></h1>
-  <h2 id="clock">00:00:00</h2>
-  <form class="hidden" id="todo-form">
+  <header id="main-header">
+    <nav>
+      <ul>
+        <li>
+          <div id="greeting" class="hidden"></div>
+        </li>
+        <li>
+          <div id="clock">00:00:00</div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <form id="todo-form">
     <input type="text" placeholder="Write a To Do and Press Enter" required/>
     <ol id="todo-list">
     </ol>  
   </form>
-  
   <div id="quote">
     <span></span>
     <span></span>
