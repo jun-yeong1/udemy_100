@@ -4,50 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>https://github.com/jun-yeong1/udemy_100.git</title>
-  <link rel="stylesheet" href="css/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/overlays.css"/>
+  <link rel="stylesheet" href="css/configuration.css"/>
+  <link rel="stylesheet" href="css/game.css"/>
 </head>
 <body>
-  <form class="hidden" id="login-form">  
-    <input
-    required
-    maxlength="15" 
-    type="text"
-    placeholder="What is your name"/>
-    <button>Log In</button>
-  </form>
+  <div id="backdrop"></div>
   <header id="main-header">
-    <nav>
-      <ul>
-        <li>
-          <div id="greeting" class="hidden"></div>
-        </li>
-        <li>
-          <div id="clock">00:00:00</div>
-        </li>
-      </ul>
-    </nav>
+    <h1>Play Tic, Tac, Toe</h1>
+    <p>Built with HTML, CSS, JavaScript</p>
   </header>
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To Do and Press Enter" required/>
-    <ol id="todo-list">
-    </ol>  
-  </form>
-  <div id="quote">
-    <span></span>
-    <span></span>
-  </div>
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
-  <script src="js/greeting.js"></script>
-  <script src="js/clock.js"></script>
-  <script src="js/quotes.js"></script>
-  <script src="js/background.js"></script>
-  <script src="js/todo.js"></script>
-  <script src="js/weather.js"></script>
+  <main>
+    <aside class="modal" id="config-overlay">
+      <h2>Choose your name</h2>
+
+      <form>
+        <div class="form-control">
+          <label for="playername">Player name</label>
+          <input type="text" name="username" id="playername"/>
+        </div>
+        <div>
+          <button type="button" class="btn btn-alt">Cancel</button>
+          <button type="submit" class="btn">Confirm</button>
+        </div>
+      </form>
+    </aside>
+    <section id="game-configuration">
+      <ol>
+        <li>
+          <article>
+            <h2>Palyer 1</h2>
+            <h3>PLAYER NAME</h3>
+            <p class="player-symbol">X</p>
+            <button class="btn btn-alt">Edit</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2>Palyer 2</h2>
+            <h3>PLAYER NAME</h3>
+            <p class="player-symbol">O</p>
+            <button class="btn btn-alt">Edit</button>
+          </article>
+        </li>
+      </ol>
+      <button class="btn">Start New Game</button>
+    </section>
+    <section id="active-game">
+      <article id="game-over">
+        <h3>You won, <span id="winner-name">PLAYER NAME</span>!</h3>
+        <p>Click "Start New Game" above, to start a new game!</p>
+      </article>
+
+      <p>It's your turn<span id="active-player-name">PLAYER NAME</span>!</p>
+      <ol id="game-board">
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </section>
+  </main>
 </body>
 </html>

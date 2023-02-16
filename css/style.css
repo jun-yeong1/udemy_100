@@ -1,70 +1,39 @@
 body {
-  background-color: black;
-  font-family: 'Unbounded', cursive;
-}
-.hidden{
-  display: none;
-}
-#main-header {
-  justify-content: space-between;
-  margin: 0.5rem;
-  padding: 0 0.1rem;
-  align-items: center;
-}
-#main-header ul {
-  list-style: none;
-  color: antiquewhite;
-  display: flex;
   margin: 0;
-  padding: 0;
+  font-family: 'Unbounded', cursive;
+  color: rgb(44, 41, 44);
+  background-color: rgb(247, 239, 247);
 }
-#main-header li {
-  margin: 0 2rem;
-  font-size: 2rem;
-}
-#login-form{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#quote{
-  display: flex;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-radius: 10px;
-  padding: 16px;
+
+#main-header {
+  background-color: rgb(140, 0, 255);
+  color: white;
+  padding: 2rem 5%;
   text-align: center;
-  flex-direction: column;
 }
-#quote span {
-  margin: 0.1rem;
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(140, 0, 255);
+  border: 1px solid rgb(140, 0, 255);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
-#todo-form{
-  position: absolute;
-  border-radius: 6px;
-  background-color: antiquewhite;
-  padding: 10px;
-  margin: 1rem auto;
-  top: 40%;
-  left: 50%;
-  width: 300px;
-  transform: translate(-50%, -50%);
+
+.btn-alt {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(140, 0, 255);
 }
-#todo-form input {
-  display: block;
-  width: 100%;
-  margin-top: 0.5rem;
-  box-sizing: border-box;
+
+.btn:hover {
+  background-color: rgb(79, 10, 190);
+  border-color: rgb(79, 10, 190);
 }
-#images{
-  background-size: cover;
-}
-ol{
-  position: relative;
-  font-size: 18px;
-  padding: 12px 40px 12px 40px;
+
+.btn-alt:hover {
+  background-color: rgb(245, 232, 255);
+  border-color: transparent;
 }
